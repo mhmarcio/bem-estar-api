@@ -1,4 +1,4 @@
-package br.gov.ma.sead.bem_estar_api;
+package br.gov.ma.sead.bem_estar_api.controller;
 
 import br.gov.ma.sead.bem_estar_api.medico.DadosCadastroMedidcos;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -9,9 +9,11 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("medicos")
 public class MedicoController {
-    @PostMapping
-    public void cadastrar(@RequestBody DadosCadastroMedidcos dados){
-        System.out.println(dados);
 
+  @PostMapping
+  public void cadastrar(@RequestBody DadosCadastroMedidcos dados){
+  System.out.println(dados);
+
+        }
     }
-}
+
